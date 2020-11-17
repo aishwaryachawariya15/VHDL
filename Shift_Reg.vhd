@@ -1,19 +1,4 @@
--------------------------------------------------------------------------------
--- File:		Shift_Reg.vhd
--- Engineer:	Jordan Christman
--- Description:	This is an implementation of a 4 bit shift register 
--- 				behavioral architecture.
--------------------------------------------------------------------------------
 
--- Lab 2 Tasks
-
--- 1) Fill in the "?" with the correct values
---
--- 2) Compile & Simulate Shift_Reg.vhd in ModelSim
---			* Note ModelSim will give you compiling
---			  error's if you do not change the "?"
--- 
--- 3) Implement Shift_reg.vhd on your Nexys4 DDR board
 
 -- Library's
 library IEEE;
