@@ -1,22 +1,4 @@
--------------------------------------------------------------------------------
--- File:		Hex_to_7_Seg.vhd
--- Engineer:	Jordan Christman
--- Description:	This design is used to take a 4 bit hexadecimal value and
---				display it on a 7 segment display.
--------------------------------------------------------------------------------
 
--- Lab 4 Tasks (Part 1)
-
--- 1) Fill in the "?" with the correct values
---
--- 2) Compile & Simulate Hex_to_7_Seg.vhd in ModelSim
---			* Note ModelSim will give you compiling
---			  error's if you do not change the "?"
-
----------------------------------------------------
--- Use the comments to help you figure out how to
--- get this design to work
----------------------------------------------------
 
 -- Library's used by this design
 library IEEE;
@@ -36,45 +18,6 @@ signal seg_out : std_logic_vector(6 downto 0);
 begin  
 	seven_seg <= not seg_out;
 
--------------------------------------------------------------------------------
---						7 Segment Display Encoding
---						--------------------------
---		Use this as a reference to determine what inputs result in what
---		outputs. We are taking a 4 bit input and displaying it's Hexadecimal
---		equivalent (0 thru F).
---
---		Some 7 segment displays use numbers as a reference however most
---		use letters to designate which pin is tied to what segment.
--------------------------------------------------------------------------------		
-	-- 7 segment display Mapping
---
---			   0
---			 -----
---			|	  |
---		  5 |     | 1
---			|  6  |
---			 -----
---			|	  |
---		  4 |     | 2
---			|	  |
---			 -----
---			   3
---
---			   A
---			 -----
---			|	  |
---		  F |     | B
---			|  G  |
---			 -----
---			|	  |
---		  E |     | C
---			|	  |
---			 -----
---			   D
--------------------------------------------------------------------------------	
-	-- Process that produces the output based on input (hex) changes
-	-- Note that even through we have active low leds, a '1' should light up the specified segment.
-	-- You should have made your signal assignment in line 36 to enable this
 	seg_proc : process(hex)
 	begin	
 		case hex is
