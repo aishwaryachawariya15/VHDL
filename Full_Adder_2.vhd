@@ -1,9 +1,4 @@
--------------------------------------------------------------------------------
--- File:		Full_Adder_2.vhd
--- Engineer:	Jordan Christman
--- Description:	This is an implementation of a single Full Adder using a 
--- 				behavioral architecture.
--------------------------------------------------------------------------------
+
 -- Library's
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
